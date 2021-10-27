@@ -2,7 +2,7 @@ body {
   margin: 20px auto;
   font-family: 'Lato';
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1em;
 }
 
 form, p {
@@ -30,4 +30,9 @@ input {
 label {
   width: 250px;
   display: inline-block;
+}
+
+.required {
+  color: red;
+  font-size: 0.7em;
 }

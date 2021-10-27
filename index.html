@@ -9,29 +9,29 @@
   <body> 
     <h3>StackOver Employee Data Form </h3>   
     <p class="note">Fields marked with * are required.</p>
-  <form>
-    <label for="name">Name: *</label>
-    <input type="text" id="name" name="name" >
+  <form></label>
+    <label for="name">Name: (Alphabetic characters only)<span class="required">*</span></label>
+    <input type="text" id="name" name="name" pattern="" >
     <br>
 
-    <label for="name">Phone Number: *</label>
-    <input type="text" id="phone" name="phone" maxlength="11">
+    <label for="name">Phone Number: (numerical xxx-xxx-xxxx format)<span class="required">*</span></label>
+    <input type="text" id="phone" name="phone" maxlength="13" pattern="">
     <br>
 
-    <label for="name">Social Security #: *</label>
-    <input type="text" id="social" name="social" pattern="minlength="10"  maxlength="10" >
+    <label for="name">Social Security #: (numerical xxx-xxx-xxxx format)<span class="required">*</span></label>
+    <input type="text" id="social" name="social" minlength="12"  maxlength="12" pattern="">
     <br>
 
-    <label for="name">Company Email Address: *</label>
-    <input type="email" id="email" name="email"  >
+    <label for="name">Company Email Address:<span class="required">*</span></label>
+    <input type="email" id="email" name="email" pattern="" >
     <br>
 
     <label for="name">Age: </label>
-    <input type="number" id="age" name="age" min="10" max="80">
+    <input type="number" id="age" name="age" min="10" max="80" pattern="">
     <br>
 
-    <label for="name">ZipCode: * </label>
-    <input type="number" id="zip" name="zip" maxlength="9" >
+    <label for="name">Zip Code: (7-digit numerical format)<span class="required">*</span></label>
+    <input type="number" id="zip" name="zip" maxlength="9" pattern="">
     <br>
     
     <input type="submit" value="Submit" />
